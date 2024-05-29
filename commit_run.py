@@ -1,7 +1,8 @@
 import subprocess
 
-print("Enter the comment for the commit")
-placeholder = input()
+print()
+placeholder = input("Enter the comment for the commit: ")
+placeholder = '"' + placeholder + '"'
 ACTIONS = [
     ["git","add", ".", ],
     ["git", "commit", "-m", placeholder],
@@ -10,18 +11,7 @@ ACTIONS = [
     ]
 
 for command in ACTIONS:
-    print("Hello world")
     print(command)
     result = subprocess.run(command, shell=True, capture_output=True, text=True)
     print(result.stdout)
 
-# commit_name = input()
-
-# def commite(commit_name):
-#     print("Hello world")
-
-#     subprocess.run(["ls", "-l"])
-#     # subprocess.run(["git add .", f'{commit_name}', 'git branch -M main', 'git push -u origin main'])
-    
-
-# commite(commit_name)
