@@ -1,10 +1,10 @@
 import subprocess
 placeholder = input()
 ACTIONS = [
-    ["git","add", ".", "commit"],
+    ["git","add", ".", ],
     ["git", "commit", "-m", placeholder],
-    ["git", "branch", "-M", "orgin/main"],
-    ["git", "push", "-u", "origin", "orgin/main"]
+    ["git", "branch", "-M", "main"],
+    ["git", "push", "-u", "origin", "main"]
     ]
 
 for command in ACTIONS:
