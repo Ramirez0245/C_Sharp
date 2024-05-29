@@ -1,4 +1,6 @@
 import subprocess
+
+print("Enter the comment for the commit")
 placeholder = input()
 ACTIONS = [
     ["git","add", ".", ],
