@@ -1,6 +1,5 @@
 import subprocess
 
-print()
 placeholder = input("Enter the comment for the commit: ")
 placeholder = '"' + placeholder + '"'
 ACTIONS = [
